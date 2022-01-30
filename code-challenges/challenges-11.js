@@ -199,6 +199,9 @@ function gradesAvg(arr) {
 
 function studentsResult(arr) {
     // write your code here
+    const arr1 = arr.map((val=>({...val,...(((val.gradsList.reduce((x1,y1)=>x1+y1))/value.gradsList.length)>= 50 && {result:"Passed"}),
+        ...(((val.gradsList.reduce((x1,y1)=>x1+y1))/val.gradsList.length) <50 && { result:"Failed"}),})))
+     return arr1;
     
 }
 
