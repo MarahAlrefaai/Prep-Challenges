@@ -71,7 +71,7 @@ const oddFiltration = (arr) => {
 
 const cvsFiltration = (arr) => {
     // write your code here
-    const val= arr.filter(function (obj) {
+   const val= arr.filter(function (obj) {
         return obj.tech == "JS" && obj.yearsOfExperience > 5
 
     });
@@ -99,9 +99,13 @@ const cvsFiltration = (arr) => {
 // ['car', 'boy', 'spy', 'building', 'why', 'dry' ] ==> ['spy', 'why', 'dry']
 // 
 // ------------------------
-
 const vowelsFiltration = (arr) => {
     // write your code here
+    const Vowel = arr.filter(word=>{
+        return  !word.match(/[aeiou]/g);
+    })
+    return Vowel;
+   
 } 
 
 // 4) ---------------------
@@ -120,6 +124,7 @@ const vowelsFiltration = (arr) => {
 
 const skillComparison = (arr1, arr2) => {
     // write your code here
+    
 }
 
 
