@@ -110,6 +110,10 @@ const arrToStr = (arr) => {
 
 const letterCounter = (str) => {
     // write your code here
+    //let arr1=str.toString().substring(, end)
+    let arr1=str.split(" ");
+ 
+   return arr1;
 }
 
 
